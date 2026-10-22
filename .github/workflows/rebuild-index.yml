@@ -1,0 +1,50 @@
+name: rebuild-index
+
+# uploads/ 有推送时自动重建 index.json / index.tsv；
+# 每日定时兜底 + 支持手动触发。提交带 [skip ci]，且忽略索引自身的变更，防止死循环。
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "index.json"
+      - "index.tsv"
+      - ".github/workflows/**"
+      - "scripts/**"
+      - "README.md"
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebuild-index
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build index
+        run: python3 scripts/build_index.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain index.json index.tsv)" ]; then
+            git add index.json index.tsv
+            git commit -m "chore: rebuild index [skip ci]"
+            git push origin HEAD:main
+          else
+            echo "index 无变化，跳过提交"
+          fi
