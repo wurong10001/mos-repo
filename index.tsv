@@ -1,3 +1,4 @@
 # mos-repo index.tsv  自动生成，请勿手改  列: category	name	path	size	sha256	ext	url
+mosapp	render_server_demo.wasm	uploads/mosapp/render_server_demo.wasm	18260	953cdd09cf165bc71c6047d5376a5271f294f73a761d6218cbaa41edb7b09a3b	wasm	https://raw.githubusercontent.com/wurong10001/mos-repo/main/uploads/mosapp/render_server_demo.wasm
 wallpaper	Hello-world.zip	uploads/wallpaper/Hello-world.zip	795	f67d39815b0eaf535a0293f5c2a398ff5d1df784436c434c4b4f6deba0ede9b0	zip	https://raw.githubusercontent.com/wurong10001/mos-repo/main/uploads/wallpaper/Hello-world.zip
 wallpaper	starry.zip	uploads/wallpaper/starry.zip	1767	878031f3cac266106b97f939c9bdf2b8d7b511a0ee8f765fd786e39f848be3f3	zip	https://raw.githubusercontent.com/wurong10001/mos-repo/main/uploads/wallpaper/starry.zip

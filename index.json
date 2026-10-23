@@ -1,11 +1,23 @@
 {
   "version": 1,
   "repo": "wurong10001/mos-repo",
-  "generated_at": "2026-10-23T11:19:12+08:00",
+  "generated_at": "2026-10-23T14:11:05+08:00",
   "base_url": "https://raw.githubusercontent.com/wurong10001/mos-repo/main",
   "cdn_url": "https://cdn.jsdelivr.net/gh/wurong10001/mos-repo@main",
-  "count": 2,
+  "count": 3,
   "files": [
+    {
+      "path": "uploads/mosapp/render_server_demo.wasm",
+      "name": "render_server_demo.wasm",
+      "category": "mosapp",
+      "ext": "wasm",
+      "type": "wasm",
+      "size": 18260,
+      "sha256": "953cdd09cf165bc71c6047d5376a5271f294f73a761d6218cbaa41edb7b09a3b",
+      "updated_at": "2026-10-23T14:11:05+08:00",
+      "url": "https://raw.githubusercontent.com/wurong10001/mos-repo/main/uploads/mosapp/render_server_demo.wasm",
+      "cdn": "https://cdn.jsdelivr.net/gh/wurong10001/mos-repo@main/uploads/mosapp/render_server_demo.wasm"
+    },
     {
       "path": "uploads/wallpaper/Hello-world.zip",
       "name": "Hello-world.zip",
