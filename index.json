@@ -1,10 +1,10 @@
 {
   "version": 1,
   "repo": "wurong10001/mos-repo",
-  "generated_at": "2026-10-22T17:03:11+08:00",
+  "generated_at": "2026-10-23T11:08:40+08:00",
   "base_url": "https://raw.githubusercontent.com/wurong10001/mos-repo/main",
   "cdn_url": "https://cdn.jsdelivr.net/gh/wurong10001/mos-repo@main",
-  "count": 1,
+  "count": 2,
   "files": [
     {
       "path": "uploads/wallpaper/Hello-world.zip",
@@ -17,6 +17,18 @@
       "updated_at": "2026-10-22T16:32:33+08:00",
       "url": "https://raw.githubusercontent.com/wurong10001/mos-repo/main/uploads/wallpaper/Hello-world.zip",
       "cdn": "https://cdn.jsdelivr.net/gh/wurong10001/mos-repo@main/uploads/wallpaper/Hello-world.zip"
+    },
+    {
+      "path": "uploads/wallpaper/starry.zip",
+      "name": "starry.zip",
+      "category": "wallpaper",
+      "ext": "zip",
+      "type": "archive",
+      "size": 1737,
+      "sha256": "61d7e71875ee131eec908a1dbadc538194ca406d58b4d2e4017e4f28d2ef232d",
+      "updated_at": "2026-10-23T11:08:40+08:00",
+      "url": "https://raw.githubusercontent.com/wurong10001/mos-repo/main/uploads/wallpaper/starry.zip",
+      "cdn": "https://cdn.jsdelivr.net/gh/wurong10001/mos-repo@main/uploads/wallpaper/starry.zip"
     }
   ]
 }
